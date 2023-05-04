@@ -17,8 +17,7 @@ void Remote:: pressButton() {
     } else {
         door.open();
         function<void()> closeAutomatic= [&] () {
-            cout << "executing thread\n";
-            this_thread::sleep_for(chrono::milliseconds(25));
+            this_thread::sleep_for(chrono::milliseconds(5000));
             door.close();
         };
         thread t(closeAutomatic);

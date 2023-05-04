@@ -12,7 +12,12 @@ int main () {
     remote.pressButton();
     cout << "Fido has gone outside..." << endl;
     cout << "Fido has all done..." << endl;
+    this_thread::sleep_for(chrono::milliseconds(10000));
+    cout << "...but he is stuck outside\n";
+    cout << "Fido starts barking ...\n";
+    cout << "Gina grabs the remote controll\n";
+    remote.pressButton();
     cout << "Fido back inside..." << endl;
-    this_thread::sleep_for(chrono::milliseconds(25));
+    this_thread::sleep_for(chrono::milliseconds(5000));
     return 0;
 }
