@@ -1,8 +1,4 @@
 #include<iostream>
-#include <chrono>
-#include <thread>
-#include <unistd.h>
-#include <functional>
 #include"Remote.hpp"
 using namespace std;
 
@@ -16,11 +12,5 @@ void Remote:: pressButton() {
         door.close();
     } else {
         door.open();
-        function<void()> closeAutomatic= [&] () {
-            this_thread::sleep_for(chrono::milliseconds(5000));
-            door.close();
-        };
-        thread t(closeAutomatic);
-        t.detach();
     }
 }
