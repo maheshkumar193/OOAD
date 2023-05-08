@@ -9,7 +9,7 @@ private:
 public:
     BarkRecognizer (DogDoor &door1);
 
-    void recognize(string &bark);
+    void recognize(std:: string bark);
 };
 
 #endif

@@ -6,7 +6,7 @@ BarkRecognizer:: BarkRecognizer (DogDoor &door1) {
     door = door1;
 }
 
-void BarkRecognizer:: recognize(string &bark) {
+void BarkRecognizer:: recognize(string bark) {
     cout << " BarkRecognizer: Heard a `" << bark << "'\n";
     door.open();
 }
