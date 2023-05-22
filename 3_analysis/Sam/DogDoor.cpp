@@ -1,5 +1,6 @@
-#include"DogDoor.hpp"
 #include<iostream>
+#include "Bark.hpp"
+#include "DogDoor.hpp"
 #include <chrono>
 #include <thread>
 #include <unistd.h>
@@ -28,4 +29,12 @@ void DogDoor:: close() {
 
 bool DogDoor:: isOpen() {
     return opened;
+}
+
+void DogDoor:: setAllowedBark(Bark bark) {
+    allowedBark = bark;
+}
+
+Bark DogDoor:: getAllowedBark() {
+    return allowedBark;
 }

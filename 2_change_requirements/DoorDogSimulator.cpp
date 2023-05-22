@@ -1,6 +1,6 @@
 #include<iostream>
-#include"DogDoor.hpp"
-#include"Remote.hpp"
+#include"../1_taking_requirements/DogDoor.hpp"
+#include"../1_taking_requirements/Remote.hpp"
 #include"BarkRecognizer.hpp"
 #include <chrono>
 #include <thread>

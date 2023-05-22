@@ -1,6 +1,6 @@
 #ifndef BARKRECOGNIZER_H
 #define BARKRECOGNIZER_H
-#include "DogDoor.hpp"
+#include "../1_taking_requirements/DogDoor.hpp"
 #include <string>
 
 class BarkRecognizer {
