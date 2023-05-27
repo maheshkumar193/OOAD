@@ -1,6 +1,5 @@
 #include <iostream>
 #include "BarkRecognizer.hpp"
-#include "Bark.hpp"
 #include "DogDoor.hpp"
 using namespace std;
 

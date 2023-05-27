@@ -1,21 +1,22 @@
-#include "Bark.hpp"
 #ifndef DOGDOOR_H
 #define DOGDOOR_H
+#include "../Sam/Bark.hpp"
+#include <vector>
 class DogDoor {
 private:
     bool opened;
-    Bark allowedBark;
+    std:: vector<Bark> allowedBarks;
 public:
     DogDoor();
 
     void open();
-    
+
     void close();
-    
+ 
     bool isOpen();
 
-    void setAllowedBark(Bark);
+    void putAllowedBark(Bark);
 
-    Bark getAllowedBark();
+    std:: vector<Bark> getAllowedBarks();
 };
 #endif
